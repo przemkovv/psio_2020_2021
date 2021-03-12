@@ -223,6 +223,13 @@ void Lab02() {
 
 }
 
+void zadanie1() {
+
+
+}
+void zadanie2() {
+
+}
 
 int main()
 {
@@ -230,5 +237,17 @@ int main()
 
     Lab02();
 
+    int zadanie;
+    std::cin >> zadanie;
+   switch (zadanie) {
+    case 1:  {
+       zadanie1();
+       break;
+   }
+    case 2: {
+       zadanie2();
+       break;
+   }
+   }
     return 0;
 }
