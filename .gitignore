@@ -1,2 +1,5 @@
 *.user
 build-*
+.vs
+_Resharper.Caches
+Lab01\out
