@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(Lab01 Lab01/main.cpp)
 add_executable(Lab02 Lab02/main.cpp)
-set_target_properties(Lab01 Lab02
+add_executable(Lab03 Lab03/main.cpp)
+set_target_properties(Lab01 Lab02 Lab03
     PROPERTIES
     CXX_EXTENSIONS OFF
 )
