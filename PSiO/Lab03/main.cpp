@@ -5,6 +5,10 @@
 #include <list>
 #include <iterator>
 
+/*
+ * (((\w+),? ?)+\.)   - zdania
+ * (( ?(\w+)[ ,]?)+\.)  - wyrazy
+ */
 
 enum Kolory {
     Czarny,
