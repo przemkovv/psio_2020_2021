@@ -5,6 +5,17 @@
 #include <string>
 
 
+void print(const  std::map<std::string, std::vector<std::string>>& dict){
+    //for (const auto& [key, values] : dict) {
+    for (const auto& p: dict) {
+           std::cout << p.first << ": {";
+           for (const auto& value : p.second) {
+               std::cout << value << ", ";
+           }
+           std::cout << "}\n";
+    }
+}
+
 int main() {
 
 
@@ -19,6 +30,7 @@ int main() {
 
     std::string text2 = R"(Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros nunc, vehicula sed tincidunt ac, condimentum et turpis. Sed vestibulum risus lectus, id suscipit turpis scelerisque et. Vestibulum eros turpis, congue sed ante non, fermentum dapibus sem. Suspendisse ipsum nisl, suscipit eget viverra nec, bibendum ut odio. Ut nec pharetra elit, nec dignissim velit. Praesent sed mauris cursus, volutpat leo ac, fringilla dolor. Donec ut ornare ligula.
 Fusce iaculis felis at risus sodales, et ornare dui laoreet. Suspendisse a massa interdum, placerat arcu quis, consequat tellus. Phasellus consequat massa odio, quis ultrices mauris dignissim nec. Phasellus interdum, eros vel faucibus ullamcorper, mi quam maximus turpis, eu hendrerit eros arcu a augue. Quisque ultricies viverra luctus. Sed consectetur, neque ut lacinia lacinia, sapien purus feugiat turpis, non feugiat diam urna nec nisi. Donec eget dictum nisl. Vestibulum et justo sit amet libero facilisis rhoncus in ut ex. Donec ut semper metus, ut feugiat libero. Duis varius odio eget nulla suscipit rhoncus. Fusce elementum non nunc a vestibulum. Pellentesque molestie iaculis vulputate.)";
+
 
 
     std::cout << "Normal:\n" << text << "\n\n";
@@ -44,6 +56,13 @@ Fusce iaculis felis at risus sodales, et ornare dui laoreet. Suspendisse a massa
    }
 
 
+
+   std::map<std::string, std::vector<std::string>> dict = {
+       {"foo", { "1", "2", "3"}},
+       {"bar", { "10", "20", "30"}},
+   };
+
+   print(dict);
 
 
 }
