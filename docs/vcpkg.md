@@ -22,7 +22,7 @@ cd e:\uczelnia\psio\2020_2021
 dir
 ```
 
-![Project folder](img\project_folder.png)
+![Project folder](img/project_folder.png)
 
 - Z racji tego, że `vcpkg` będziemy chcieli używać w więcej niż jednym projekcie przejdziemy do katalogu wyżej:
 
@@ -30,11 +30,11 @@ dir
 cd ..
 ```
 
-![Folder above](img\folder_above.png)
+![Folder above](img/folder_above.png)
 
 - Otwórz stronę `vcpkg` na `github.org` w przeglądarce: <https://github.com/Microsoft/vcpkg>, kliknij na przycisk `Code` i skopiuj URL
 
-![Copy vcpkg url](img\copy_vcpkg_url.png)
+![Copy vcpkg url](img/copy_vcpkg_url.png)
 
 - W konsoli natomiast wpisz polecenie:
 
@@ -44,7 +44,7 @@ git clone https://github.com/microsoft/vcpkg.git
 
 Powinno nastąpić klonowanie repozytorium z menadżerem paczek `vcpkg` i powinno się uzyskać następujący wynik:
 
-![](img\git_clone_vcpkg.png)
+![](img/git_clone_vcpkg.png)
 
 - Uruchom polecenie `.\vcpkg\bootstrap-vcpkg.bat` w celu inicjalizacji menadżera paczek.
 
@@ -52,7 +52,7 @@ Powinno nastąpić klonowanie repozytorium z menadżerem paczek `vcpkg` i powinn
 .\vcpkg\bootstrap-vcpkg.bat
 ```
 
-![vcpkg bootstrap](img\vcpkg_bootstrap.png)
+![vcpkg bootstrap](img/vcpkg_bootstrap.png)
 
 - Gratulacje, menadżer paczek powinen zostać poprawnie zainstalowany. Teraz przejdziemy do obsługi `vcpkg` i instalacji paczek.
 
@@ -84,8 +84,8 @@ Nastąpie kompilacja biblioteki `sfml` oraz wymaganych zależności.
 
 Wynik powinien być podobny do poniższego:
 
-![vcpkg sfml install](img\vcpkg_sfml_install.png)
-![vcpkg sfml install](img\vcpkg_sfml_install2.png)
+![vcpkg sfml install](img/vcpkg_sfml_install.png)
+![vcpkg sfml install](img/vcpkg_sfml_install2.png)
 
 ```text
 The package sfml provides CMake targets:
@@ -101,11 +101,11 @@ The package sfml provides CMake targets:
 
 - Otwórz swój projekt w QtCreator
 
-![Open project](img\open_qt_project.png)
+![Open project](img/open_qt_project.png)
 
 - Kliknij ikonę `Projects` na pasku po lewej stronie:
 
-![QTCreator projects](img\qtcreator_projects.png)
+![QTCreator projects](img/qtcreator_projects.png)
 
 - W międzyczasie, w konsoli z `vcpkg` uruchom polecenie:
 
@@ -119,7 +119,7 @@ Na ekranie pojawi się polecenie/argument jaki będziemy musieli dodać do proje
 -DCMAKE_TOOLCHAIN_FILE=E:/Uczelnia/psio/vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
-![vcpkg integrate install](img\vcpkg_integrate_install.png)
+![vcpkg integrate install](img/vcpkg_integrate_install.png)
 
 - Skopiuj ten argument oraz (identyfikacja tripletu):
 
@@ -134,17 +134,17 @@ i wklej w pole `Initial CMake parameters` w QtCreator w tej kolejności:
 -DCMAKE_TOOLCHAIN_FILE=E:/Uczelnia/psio/vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
-![cmake vcpkg](img\qtcreator_project_cmake_vcpkg2.png)
+![cmake vcpkg](img/qtcreator_project_cmake_vcpkg2.png)
 
 - Dla pewności, że wszystko się odświeży w projekcie z menu `Build` wybierz `Clean CMake Configuration`
 
-![clean cmake](img\clean_cmake.png)
+![clean cmake](img/clean_cmake.png)
 
 oraz `Run CMake`:
 
-![run cmake](img\run_cmake.png)
+![run cmake](img/run_cmake.png)
 
-![cmake vcpkg](img\cmake_vcpkg2.png)
+![cmake vcpkg](img/cmake_vcpkg2.png)
 
 ## Dodawanie biblioteki `sfml` do projektu
 
