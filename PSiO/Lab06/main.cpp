@@ -5,7 +5,38 @@
 #include <iostream>
 #include <fstream>
 
+template <typename T>
+std::vector<std::vector<T>> createMatrix(int m, int n) {
+    return {};
+}
+
+
+class Foo {
+
+public:
+    virtual void call_foo();
+};
+
+
+
+class Bar : public Foo {
+public:
+    virtual void call_bar();
+
+    virtual ~Bar();// = default;
+
+};
+
+Bar::~Bar() {
+    call_bar();
+}
+
 int main () {
+
+    createMatrix<int>(4,5);
+
+
+
 
     Histogram hist; //Konstruktor domyślny
 

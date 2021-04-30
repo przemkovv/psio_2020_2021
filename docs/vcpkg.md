@@ -44,7 +44,7 @@ git clone https://github.com/microsoft/vcpkg.git
 
 Powinno nastąpić klonowanie repozytorium z menadżerem paczek `vcpkg` i powinno się uzyskać następujący wynik:
 
-![](img/git_clone_vcpkg.png)
+![git clone vcpkg](img/git_clone_vcpkg.png)
 
 - Uruchom polecenie `.\vcpkg\bootstrap-vcpkg.bat` w celu inicjalizacji menadżera paczek.
 
@@ -70,12 +70,12 @@ wyświetli listę paczek już zainstalowanych, powinna ona być pusta.
 ./vcpkg/vcpkg.exe search sfml
 ```
 
-![search sfml](vcpkg_search_sfml.png)
+![search sfml](img/vcpkg_search_sfml.png)
 
 - Zainstaluj paczkę `sfml`
 
 ```cmd
-./vcpkg/vcpkg.exe install sfml-x64-mingw-static
+./vcpkg/vcpkg.exe install sfml:x64-mingw-static
 ```
 
 Nastąpie kompilacja biblioteki `sfml` oraz wymaganych zależności.
