@@ -17,7 +17,12 @@ add_executable(Lab06
 add_executable(Lab07
     Lab07/main.cpp
 )
-set_target_properties(Lab01 Lab02 Lab03 Lab04 Lab06 Lab07
+add_executable(Lab08
+    Lab08/main.cpp
+    Lab08/Rectangle.cpp
+    Lab08/Rectangle.h
+)
+set_target_properties(Lab01 Lab02 Lab03 Lab04 Lab06 Lab07 Lab08
     PROPERTIES
     CXX_EXTENSIONS OFF
 )

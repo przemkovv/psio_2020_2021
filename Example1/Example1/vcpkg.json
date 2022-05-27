@@ -1,0 +1,10 @@
+{
+  "name": "example1",
+  "version-string": "1.0.0",
+  "port-version": 1,
+  "homepage": "",
+  "description": "Example exam",
+  "dependencies": [
+    "sfml"
+  ]
+}
